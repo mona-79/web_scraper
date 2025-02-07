@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web Scraper Chatbot</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1>Web Scraper Chatbot</h1>
+
+    <div class="container">
+        <!-- Scrape Website Section -->
+        <h2>Scrape a Website</h2>
+        <div class="input-section">
+            <input type="text" id="urlInput" placeholder="Enter website URL">
+            <button id="scrapeButton" onclick="scrapeData()">Scrape</button>
+        </div>
+        <p id="scrapeStatus"></p>
+        <div id="scrapingMessage" class="loading" style="display: none;">Scraping data... Please wait.</div>
+
+        <hr>
+
+        <!-- Chatbot Section -->
+        <h2>Chat with Bot</h2>
+        <div id="chatbox">
+            <div id="messages"></div>
+        </div>
+        <div class="input-section">
+            <input type="text" id="queryInput" placeholder="Ask something...">
+            <button id="askButton" onclick="askChatbot()">Ask</button>
+        </div>
+    </div>
+
+    <script src="{{ url_for('static', filename='script.js') }}"></script>
+</body>
+</html>
