@@ -1,0 +1,129 @@
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f0f4f7; /* Light gray background */
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    color: #333;
+}
+
+.container {
+    width: 70%;
+    background-color: #ffffff;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    margin: 20px;
+    border-top: 5px solid #3498db; /* Colorful top border */
+}
+
+h1 {
+    font-size: 36px;
+    color: #3498db; /* Blue title */
+    margin-bottom: 20px;
+}
+
+h2 {
+    font-size: 24px;
+    color: #2ecc71; /* Green subheading */
+    margin-bottom: 20px;
+}
+
+.input-section {
+    margin: 10px 0;
+}
+
+input {
+    padding: 12px;
+    width: 60%;
+    border: 2px solid #3498db; /* Blue border for input */
+    border-radius: 5px;
+    margin-right: 10px;
+    font-size: 16px;
+    background-color: #ecf0f1; /* Light gray input background */
+}
+
+input:focus {
+    outline: none;
+    border-color: #2ecc71; /* Green border on focus */
+    background-color: #ffffff;
+}
+
+button {
+    padding: 12px 20px;
+    background-color: #3498db; /* Blue button */
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+button:hover {
+    background-color: #2980b9; /* Darker blue on hover */
+}
+
+button:disabled {
+    background-color: #bdc3c7; /* Disabled button */
+    cursor: not-allowed;
+}
+
+#chatbox {
+    height: 300px;
+    overflow-y: auto;
+    border: 1px solid #ddd;
+    padding: 10px;
+    margin-bottom: 20px;
+    background-color: #ecf0f1; /* Light gray chatbox */
+    border-radius: 5px;
+}
+
+.user-message {
+    text-align: right;
+    color: #2980b9; /* Blue for user message */
+    margin-bottom: 10px;
+}
+
+.bot-message {
+    text-align: left;
+    color: #27ae60; /* Green for bot response */
+    margin-bottom: 10px;
+}
+
+#scrapeStatus {
+    font-weight: bold;
+    color: #34495e; /* Darker color for status text */
+}
+
+.loading {
+    font-size: 18px;
+    color: #f39c12; /* Yellow for loading text */
+    margin-top: 10px;
+}
+
+hr {
+    border: 1px solid #ddd;
+    margin: 20px 0;
+}
+
+input, button {
+    transition: all 0.3s ease;
+}
+
+#scrapingMessage {
+    color: #f39c12;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+#scrapeButton {
+    background-color: #e74c3c; /* Red color for scrape button */
+}
+
+#scrapeButton:hover {
+    background-color: #c0392b; /* Darker red on hover */
+}
