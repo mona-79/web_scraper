@@ -9,6 +9,28 @@ This project integrates a web scraper and a chatbot into a single application. U
 - **Responsive Interface:** The UI is responsive, making it accessible on both desktop and mobile devices.
 - **Attractive Design:** The user interface includes interactive buttons and colorful elements to enhance user experience.
 
+ ## Edge Cases Handled
+- **Invalid URL Input:** If the user doesn't provide a valid URL or leaves the URL field blank, the scraper won't function and will prompt the user to enter a valid URL.
+
+- **Empty or Missing Scraped Data:** If the user tries to ask the chatbot without scraping any data first, the application will return an error message saying "Scraped data not found. Please scrape first."
+
+- **Chatbot Query without Input:** If the user tries to ask the chatbot without entering a question, the chatbot will prompt the user to enter a query.
+
+- **Scraping Failure:** If the scraping fails (e.g., the website is unreachable or doesn't allow scraping), an error message will notify the user.
+
+- **Unreachable Website:** If the website cannot be reached due to connectivity issues or restrictions, the application will notify the user with an error message like "Error fetching data."
+
+ ## Example
+Scrape a Website:
+
+Input the URL https://www.example.com in the input field and click the Scrape button.
+The application will scrape the website and store its textual content.
+Ask the Chatbot:
+
+Once the website is scraped, you can ask the chatbot, for example: "What is the name of the college?"
+If the scraped data contains the information about the college name, the chatbot will respond with the relevant information, such as "The name of the college is Example College."
+ 
+
 ## Technologies Used
 
 - **Flask:** A lightweight web framework to build the server-side of the application.
